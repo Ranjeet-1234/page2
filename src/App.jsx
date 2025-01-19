@@ -1,6 +1,6 @@
 import React from "react";
 import MyBook from "./components/MyBook";
-import BgTexture from "./assets/brown-wooden-flooring.jpg";
+import BgTexture from "./assets/brown-wooden-flooring.jpeg";
 
 const BgTextureStyle = {
   backgroundImage: `url(${BgTexture})`,

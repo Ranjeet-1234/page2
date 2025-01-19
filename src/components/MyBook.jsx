@@ -1,7 +1,7 @@
 import HTMLFlipBook from "react-pageflip";
 import Page from "./Page";
 import Cover from "./pages/Cover/Cover";
-import coverImg from "../assets/cover.png";
+import coverImg from "../assets/cover1.jpg";
 import EndImg from "../assets/last-page.png";
 import FirstPage from "./pages/Hero/FirstPage";
 import Skills from "./pages/Skills/Skills";
@@ -47,28 +47,37 @@ function MyBook(props) {
   return (
     <HTMLFlipBook width={600} height={700} showCover="true">
       <Page number={1}>
-        <Cover coverImg={coverImg} title="My Portfolio" />
+        <Cover coverImg={coverImg}  />
       </Page>
       <Page number={2}>
         <FirstPage />
       </Page>
       <Page number={3}>
-        <Skills />
+        <Services planet="Sun"/>
       </Page>
       <Page number={4}>
-        <Services />
+        <Services planet="Mars"/>
       </Page>
       <Page number={5}>
-        <About />
+        <Services planet="Jupiter"/>
       </Page>
       <Page number={6}>
-        <Projects ProjectData={ProjectData} />
+        <Services planet="Venus"/>
       </Page>
       <Page number={7}>
-        <Projects ProjectData={ProjectData2} />
+        <Services planet="Saturn"/>
       </Page>
       <Page number={8}>
-        <Cover coverImg={EndImg} title="Thanks" />
+        <About />
+      </Page>
+      {/* <Page number={9}>
+        <Projects ProjectData={ProjectData} />
+      </Page>
+      <Page number={10}>
+        <Projects ProjectData={ProjectData2} />
+      </Page> */}
+      <Page number={9}>
+        <Cover coverImg={EndImg}  />
       </Page>
     </HTMLFlipBook>
   );
