@@ -68,9 +68,9 @@ function MyBook(props) {
       <Page number={7}>
         <Services planet="Saturn"/>
       </Page>
-      <Page number={8}>
+      {/* <Page number={8}>
         <About />
-      </Page>
+      </Page> */}
       {/* <Page number={9}>
         <Projects ProjectData={ProjectData} />
       </Page>
