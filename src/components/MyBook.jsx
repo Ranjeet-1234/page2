@@ -45,6 +45,7 @@ const ProjectData2 = [
 
 function MyBook(props) {
   return (
+    <div style={{ textAlign: "center", marginTop: "20px" }}>
     <HTMLFlipBook width={600} height={700} showCover="true">
       <Page number={1}>
         <Cover coverImg={coverImg}  />
@@ -80,6 +81,20 @@ function MyBook(props) {
         <Cover coverImg={EndImg}  />
       </Page>
     </HTMLFlipBook>
+    <a
+        href="https://ranjeet-1234.github.io/chat/templates/index.html"
+        className="font"
+        style={{
+          display: "inline-block",
+          marginTop: "20px",
+          fontSize: "40px",
+          textDecoration: "none",
+          color: "#e49ff8",
+        }}
+      >
+        Talk with chat bot
+      </a>
+    </div>
   );
 }
 
