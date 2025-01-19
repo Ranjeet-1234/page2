@@ -1,6 +1,7 @@
 import React from "react";
 import MyBook from "./components/MyBook";
 import BgTexture from "./assets/brown-wooden-flooring.jpeg";
+import LinkAI from "./components/LinkAi";
 
 const BgTextureStyle = {
   backgroundImage: `url(${BgTexture})`,
@@ -17,6 +18,7 @@ const App = () => {
       className="w-full h-full flex justify-center items-center"
     >
       <MyBook />
+      <LinkAI/>
     </div>
   );
 };
